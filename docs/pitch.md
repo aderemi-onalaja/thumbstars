@@ -25,10 +25,6 @@ This friction discourages quick feedback, especially on mobile, and small-sample
 
 **Total Clicks**: 2 (search + vote) vs. Google Reviews’ 5–7 (open review, select stars, optional text, submit). 
 
-See below for user journey diagram:
-
-<img src="../images/thumbstar_user_journey_detailed.png" alt="ThumbStars User Journey" width="500">
-
 ### Example
 - **Place**: Joe’s Coffee Shop
 - **Votes**: Service (8👍, 2👎), Cleanliness (3👍, 0👎), Value (1👍, 1👎)
@@ -36,31 +32,8 @@ See below for user journey diagram:
 - **Confidence**: “High confidence” badge for 30+ votes per criterion; “Early rating” otherwise.
 
 ## User Journey
-```
-Start: Open ThumbStars
-  |
-Search for a place (1 click)
-  | Google Places API autocomplete
-Select a place
-  |
-View Place Card (Name, Address, Stars: 3.5★)
-  |
-See Criteria Chips (Service: 71% 👍, Cleanliness: 71% 👍, Value: 50% 👍)
-  |
-Vote: Tap 👍 or 👎 (1–2 clicks)
-  | Instant animation
-Submit Vote
-  |
-Refresh Place Card (New stars: 3.5★, "Based on 137 votes")
-  |
-Optional: Click "See reviews on Google"
-  |
-End
-```
 
-**Visual**:
-
-<img src="../images/thumbstar_user_journey.png" alt="ThumbStars User Journey" width="500">
+<img src="../images/thumbstar_user_journey_detailed.png" alt="ThumbStars User Journey" width="500">
 
 ## Scoring Simplified
 - **Binary Votes**: 👍 (+1) or 👎 (-1) per criterion.
