@@ -58,7 +58,9 @@ Optional: Click "See reviews on Google"
 End
 ```
 
-**Visual**: [Insert `user_journey.jpg` from repo or Mermaid-rendered flowchart in pitch slides.]
+**Visual**:
+
+<img src="../images/thumbstar_user_journey.png" alt="ThumbStars User Journey" width="500">
 
 ## Scoring Simplified
 - **Binary Votes**: 👍 (+1) or 👎 (-1) per criterion.
