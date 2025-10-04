@@ -27,7 +27,7 @@ This friction discourages quick feedback, especially on mobile, and small-sample
 
 See below for user journey diagram:
 
-<img src="../images/thumbstar_user_journey.png" alt="ThumbStars User Journey" width="500">
+<img src="../images/thumbstar_user_journey_detailed.png" alt="ThumbStars User Journey" width="500">
 
 ### Example
 - **Place**: Joe’s Coffee Shop
