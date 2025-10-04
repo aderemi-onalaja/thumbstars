@@ -25,7 +25,9 @@ This friction discourages quick feedback, especially on mobile, and small-sample
 
 **Total Clicks**: 2 (search + vote) vs. Google Reviews’ 5–7 (open review, select stars, optional text, submit). 
 
-See below for diagram: <img src="../images/thumbstar_user_journey.png" alt="ThumbStars User Journey" width="500">
+See below for user journey diagram:
+
+<img src="../images/thumbstar_user_journey.png" alt="ThumbStars User Journey" width="500">
 
 ### Example
 - **Place**: Joe’s Coffee Shop
