@@ -23,7 +23,9 @@ This friction discourages quick feedback, especially on mobile, and small-sample
 2. **Vote**: Tap 👍 or 👎 on criteria like Service, Cleanliness, Value (1–2 clicks).
 3. **See Results**: Instant animations show updated stars (e.g., 3.5★) and vote counts (e.g., “Based on 137 votes”).
 
-**Total Clicks**: 2 (search + vote) vs. Google Reviews’ 5–7 (open review, select stars, optional text, submit).
+**Total Clicks**: 2 (search + vote) vs. Google Reviews’ 5–7 (open review, select stars, optional text, submit). 
+
+See below for diagram - ![ThumbStars User Journey](../images/thumbstar_user_journey.png)
 
 ### Example
 - **Place**: Joe’s Coffee Shop
