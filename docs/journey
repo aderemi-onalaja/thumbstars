@@ -1,0 +1,35 @@
+# ThumbStars User Journey
+
+Below is a textual representation of the ThumbStars user journey, designed for a pitch to illustrate how users interact with the app. It uses a simple Markdown-based flowchart to show the steps from searching for a place to viewing updated ratings, emphasizing ease of use and integration with Google Places.
+
+```mermaid
+graph TD
+    A[Start: User opens ThumbStars app] --> B[Search for a place]
+    B -->|Google Places API autocomplete| C[Select a place]
+    C --> D[View Place Card: <br> Name, Address, Google Place Link, <br> Overall Stars (e.g., 3.5★)]
+    D --> E[See Criteria Chips: <br> Service (71% 👍), Cleanliness (71% 👍), <br> Value (50% 👍)]
+    E --> F[Vote: Tap 👍 or 👎 on each criterion]
+    F -->|Client-side animation| G[Submit Vote: POST /votes <br> with user_token (hashed to user_hash)]
+    G -->|API confirms vote| H[Update Aggregate: <br> Recalculate scores and stars]
+    H --> I[Refresh Place Card: <br> Show new stars (e.g., 3.5★), <br> "Based on 137 votes"]
+    I --> J[Optional: Click "See reviews on Google" <br> Links to google_place_id]
+    J --> K[End: User sees updated ratings <br> or explores another place]
+```
+
+## Key Steps Explained
+1. **Search for a Place**: Users type a place name (e.g., “Joe’s Coffee Shop”). Google Places API autocompletes with verified names and addresses.
+2. **Select a Place**: User picks a place, loading its Place Card.
+3. **View Place Card**: Shows place name, address, star rating (e.g., 3.5★), and a link to Google’s official page.
+4. **See Criteria**: Displays chips like “Service: 71% 👍”, “Cleanliness: 71% 👍”, “Value: 50% 👍” with thumbs for voting.
+5. **Vote**: User taps 👍 or 👎 for each criterion. Animations show immediate feedback (e.g., chip highlights).
+6. **Submit Vote**: Vote is sent to the API with a `user_token`, hashed to `user_hash` for privacy and spam prevention.
+7. **Update Aggregate**: Backend recalculates per-criterion scores and overall stars using Bayesian smoothing.
+8. **Refresh Place Card**: Updated stars and vote count (e.g., “Based on 137 votes”) are shown.
+9. **Optional Google Link**: User can click “See reviews on Google” to view the place’s Google profile.
+10. **End**: User sees the updated rating or searches for another place.
+
+## Why It’s Great
+- **Fast and Fun**: Voting takes seconds with simple thumbs.
+- **Visual Feedback**: Animations and real-time updates keep users engaged.
+- **Trusted Integration**: Google Places API ensures accurate place data and compliance.
+- **Reliable Ratings**: Smart scoring prevents skewed results, even with few votes.
